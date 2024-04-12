@@ -5,11 +5,11 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - LatenSee',
+    default: 'LatenSee - Improve first-run latency and visualize the latency of serverless functions',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'LatenSee is a tool that dynamically pings your AWS lambda functions, reducing cold starts to improve your user&#39;s experience.',
 }
 
 const inter = Inter({
