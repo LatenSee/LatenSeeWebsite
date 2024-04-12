@@ -2,13 +2,12 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoNode from '@/images/logos/node.svg'
 import logoReact from '@/images/logos/react.svg'
+import logoNode from '@/images/logos/node.svg'
+import logoExpress from '@/images/logos/express.svg'
+import logoLambda from '@/images/logos/lambda.svg'
+import logoDocker from '@/images/logos/docker.svg'
+import logoJest from '@/images/logos/jest.svg'
 
 export function Hero() {
   return (
@@ -41,7 +40,7 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Proudly open source built on fantastic tools
+          Proudly open source and built on fantastic tools
         </p>
         <ul
           role="list"
@@ -51,12 +50,12 @@ export function Hero() {
             [
               { name: 'React', logo: logoReact },
               { name: 'Node', logo: logoNode },
-              { name: 'Express', logo: logoStaticKit },
+              { name: 'Express', logo: logoExpress },
             ],
             [
-              { name: 'AWS Lambda', logo: logoMirage },
-              { name: 'ApexCharts', logo: logoLaravel },
-              { name: 'Jest', logo: logoStatamic },
+              { name: 'AWS Lambda', logo: logoLambda },
+              { name: 'Docker', logo: logoDocker },
+              { name: 'Jest', logo: logoJest },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
