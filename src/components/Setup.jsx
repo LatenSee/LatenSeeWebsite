@@ -21,7 +21,7 @@ export function Setup() {
           {/* This is the code for the lambda function */}
           <div className="m-5 xl:w-1/2">
             <p className="align-left mb-4 mt-4 text-base tracking-tight text-slate-700">
-              1. Add two lines around your lambda function&apos;s declaration.
+            <span className="font-extrabold">1.</span> Add two lines around your lambda function&apos;s declaration.
               These tell your lambda to break when it recognizes LatenSee.
             </p>
             <div className="mockup-code">
@@ -77,7 +77,7 @@ export function Setup() {
           {/* This is the code for building LatenSee image */}
           <div className="m-5 xl:w-1/2">
             <p className="align-left mb-4 mt-4 text-base tracking-tight text-slate-700">
-              2. Build your LatenSee docker image, and deploy anywhere you host
+              <span className="font-extrabold">2.</span> Build your LatenSee docker image, and deploy anywhere you host
               your containers.
             </p>
             <div className="mockup-code">
