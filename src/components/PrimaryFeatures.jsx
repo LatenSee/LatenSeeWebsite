@@ -67,7 +67,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            LatenSee keeps your lambdas and serverless functions warm.
+            Keep your serverless functions fast and responsive.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
             Self-host LatenSee and it will ping your serverless functions and measure cold starts. LatenSee will intelligently ping more often to avoid cold starts.

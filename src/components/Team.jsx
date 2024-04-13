@@ -46,7 +46,7 @@ export function Team() {
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Crafted with care</h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-          Our team wanted to provide the best developer experience they could, and created an experience they want to use in their own applications.
+          Our team wanted to build a product we&apos;d be proud to use without compromising developer experience or functionality.
           </p>
         </div>
         <ul
