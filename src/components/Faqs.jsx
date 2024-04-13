@@ -6,53 +6,40 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'Does any of my data go to a third party server?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'No. All data for running the application stays within your self-hosted app. There is no third party communication in LatenSee.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
-    },
-    {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'Where can I host LatenSee?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'LatenSee is easily hosted anywhere you can host a docker container. We recommend using the same cluster that your app is deployed in in order to ensure secure connections between your LatenSee app and the functions you are warming.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question:
+        "I don't want my Lambda to run or send data back, how can I ensure that LatenSee doesn't receive any other info?",
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        "LatenSee's only addition to your Lambda is a small closure variable (used to detect if the invocation is a cold start) and immediately processes a response - feel free to audit the code snippet!",
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: "I'd like to suggest a new feature, what can I do?",
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
-    },
-    {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Feel free to open an issue on our Github - and of course, feel free to contribute directly yourself!',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question:
+        "My Lambda doesn't have an API endpoint and is triggered by something else, what should I do?",
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'We suggest adding an additional API gateway trigger for your Lambda.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'How can I get in touch with the team?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        "Feel free to follow us on LinkedIn or Github, we're always willing to share what we've learned with others!",
     },
   ],
 ]
@@ -81,7 +68,8 @@ export function Faqs() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, open an issue in our Github.
+            If you can’t find what you’re looking for, open an issue in our
+            Github.
           </p>
         </div>
         <ul
