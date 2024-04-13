@@ -34,7 +34,7 @@ export function Hero() {
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register" color="blue">
           <span>
-            Check Github today
+            Go to Github
           </span>
         </Button>
       </div>
