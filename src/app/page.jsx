@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { Setup } from '@/components/Setup';
 import { Team } from '@/components/Team'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <PrimaryFeatures />
-        <SecondaryFeatures />
+        <Setup />
         <CallToAction />
         <Team />
         <Faqs />
