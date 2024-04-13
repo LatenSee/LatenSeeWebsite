@@ -11,7 +11,7 @@ import logoJest from '@/images/logos/jest.svg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32">
+    <Container className="pb-10 pt-20 text-center lg:pt-24">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Serverless functions that are{' '}
         <span className="relative whitespace-nowrap text-blue-600">
@@ -38,7 +38,7 @@ export function Hero() {
           </span>
         </Button>
       </div>
-      <div className="mt-36 lg:mt-44">
+      <div className="mt-24 lg:mt-28">
         <p className="font-display text-base text-slate-900">
           Proudly open source and built on fantastic tools
         </p>
