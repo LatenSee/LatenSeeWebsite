@@ -7,35 +7,28 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotDashboard from '@/images/screenshots/dashboard_browser.png'
+import screenshotConfigure from '@/images/screenshots/configure_browser.png'
+import screenshotUser from '@/images/screenshots/user_browser.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Performance at a glance',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "See all of your function's latency from recent invocations and stats about your app's lambdas.",
+    image: screenshotDashboard,
   },
   {
-    title: 'Claim expenses',
+    title: 'Warm any lambdas',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Easily add new endpoints to LatenSee and instantly start keeping them warm.",
+    image: screenshotConfigure,
   },
   {
-    title: 'VAT handling',
+    title: 'Granular control',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      "Organize lambdas into different apps, and control invocations uniquely for each function.",
+    image: screenshotUser,
   },
 ]
 
@@ -74,11 +67,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            LatenSee keeps your lambdas and serverless functions warm.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Self-host LatenSee and it will ping your serverless functions and measure cold starts. LatenSee will intelligently ping more often to avoid cold starts.
           </p>
         </div>
         <Tab.Group
