@@ -24,7 +24,7 @@ export function CallToAction() {
             Set up LatenSee today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to say goodbye to slow first page loads, and degraded user experiences. Take control of your severless functions.
+            It’s time to say goodbye to slow first page loads, and degraded user experiences. Take control of your serverless functions.
           </p>
           <Button href="https://github.com/oslabs-beta/LatenSee" color="white" className="mt-10">
             Go to Github
